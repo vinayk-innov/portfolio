@@ -1,0 +1,96 @@
+@media screen (min-width: 500px); 
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    background-color: rgb(218, 232, 248)
+}
+
+/*Navigation Bar*/
+.navbar{
+    margin: 3vw 1vw;
+    width: 80vw;
+}
+.menu{
+    display: inline;
+    justify-content:left;
+    padding-left: 3vw;
+}
+.menu li{
+    display: inline;
+    list-style: none;
+    padding-right: 1vw;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(26, 172, 172);
+}
+.menu li a:hover{
+    color: rgb(31, 82, 82);
+    font-weight: bold;
+}
+
+.search-box{
+    position: absolute;
+    right: 4vw;
+    top: 3vw;
+}
+#search{
+    width: 15vw;
+    height: 6vh;
+    border-radius: 9px;
+    background-color: rgba(150, 150, 150, 0.507);
+    font-size: 16px;
+}
+
+
+/*-------------------------------------------------*/
+.typing-text{
+    display: inline-flex;
+    width: fit-content;
+
+}
+.content{
+    margin-left: 10vw;
+    margin-top: 10vw;
+    color: rgb(35, 69, 88);
+}
+.text{
+    font-size: 7vh;
+    padding-bottom: 1vh;
+}
+.name{
+    font-size: 12vh;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+.job{
+    font-size: 6vh;
+}
+.one{
+    color: rgb(91, 176, 187);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    0% { width: 0% ;background-color: transparent;}
+    50% { width: 100%;background-color: transparent;}
+    90% {width: 100%}
+    100% { width: 0% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  
